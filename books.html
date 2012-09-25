@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Books:</title>
+    <link rel="stylesheet" href="{{static_url('style.css')}}">
+</head>
+<body>
+    <h1>Books</h1>
+    <a href="/">Enter a New Book</a><br/><br/>
+
+    {% for book in books%}
+        <li>
+            <span class="title">{{book["title"]}}</span>
+            <span class="name"> {{book["author"]}}</span>
+            <span class="name">{{book["year"]}}</span>
+            <a href="/delete/{{book['book_id']}}" class="delete">Delete</a>
+        </li>
+    {% end %}
+</body>
+</html>

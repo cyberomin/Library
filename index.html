@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Enter A New Book</title>
+    <link rel="stylesheet" href="{{ static_url('style.css')}} ">
+</head>
+<body>
+
+    <a href="/books">View All Books</a>
+    <form action="/book" method="post">
+        <p>
+            Title:<br/>
+            <input type="text" name="title" />
+        </p>
+        <p>
+            Author:<br/>
+            <input type="text" name="author" />
+        </p>
+        <p>
+            Year of Publication:<br/>
+            <input type="text" name="year" />
+        </p>
+        <p>
+
+            <input type="submit" name="submit" value="Submit"/>
+        </p>
+    </form>
+
+</body>
+</html>

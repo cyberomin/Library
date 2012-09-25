@@ -1,0 +1,35 @@
+body
+{
+    font-family: "Trebuchet MS";
+    list-style: none;
+}
+li
+{
+    padding-bottom: 20px;
+}
+li span.title
+{
+    display: block;
+    color: #999999;
+}
+li span.name
+{
+    display: block;
+    font-size: 13px;
+}
+a
+{
+    color: #E0E0E0;
+}
+
+input[type="text"]
+{
+    border: solid 1px #CCCCCC;
+    width: 300px;
+    padding: 2px;
+}
+
+a.delete
+{
+    color: #F00;
+}
